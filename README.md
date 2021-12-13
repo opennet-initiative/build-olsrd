@@ -7,6 +7,8 @@ Steps for reproducing a specific olsrd build.
     DIR=/tmp/olsr-build/share/
     sudo docker run --rm -it -v $DIR:/olsrd/mount build-olsrd
 
-Now start build-olsrd-in-container.sh script in docker container.
+You are now logged into bash of the container. Next, start build-olsrd-in-container.sh script, e.g.
 
-All .deb files are now in $DIR
+    root@72b92ebbd7ab:/olsrd# ./build-olsrd-in-container.sh 
+
+All .deb files are now in $DIR of the docker host.
