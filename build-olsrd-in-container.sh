@@ -1,5 +1,5 @@
 #
-# download OONF
+# download OLSR
 #
 cd /olsrd/temp
 git clone https://github.com/OLSR/olsrd.git
