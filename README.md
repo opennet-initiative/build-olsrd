@@ -1,4 +1,4 @@
-Steps for generating olsrd [1] debian 11 package via docker container.
+Steps for generating olsrd [1] Debian 11 package via Docker container.
 
 [1] specific olsrd build https://github.com/OLSR/olsrd/tree/4973feb538b5b98b9d8ac2f8f474202f6d73de78
 
