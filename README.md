@@ -9,10 +9,6 @@ Steps for generating olsrd [1] debian 11 package via docker container.
     sudo docker run build-olsrd
     mkdir /tmp/olsr-build-share
     DIR=/tmp/olsr-build-share
-    sudo docker run --rm -it -v $DIR:/olsrd/mount build-olsrd
-
-You are now logged into bash of the container. Next, start build-olsrd-in-container.sh script, e.g.
-
-    root@72b92ebbd7ab:/olsrd# ./build-olsrd-in-container.sh 
+    sudo docker run --detach=false --rm -v $DIR:/olsrd/mount build-olsrd
 
 All .deb files are now in $DIR of the docker host.
