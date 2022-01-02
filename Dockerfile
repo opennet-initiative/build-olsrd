@@ -8,6 +8,4 @@ RUN mkdir -p /olsrd/mount
 ADD build-olsrd-in-container.sh /olsrd/build-olsrd-in-container.sh
 
 WORKDIR /olsrd
-CMD ["bash"]
-
-
+CMD ["bash","./build-olsrd-in-container.sh"]
