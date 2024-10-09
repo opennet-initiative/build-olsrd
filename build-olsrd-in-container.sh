@@ -2,17 +2,9 @@
 # download OLSR
 #
 cd /olsrd/temp
-git clone https://github.com/OLSR/olsrd.git
+git clone https://github.com/opennet-initiative/olsrd/
 cd olsrd/
-git checkout 4973feb538b5b98b9d8ac2f8f474202f6d73de78
-
-#
-# build .deb
-#
-git remote add debbuild https://github.com/opennet-initiative/olsrd-debian-package.git
-git fetch debbuild
-git checkout debbuild/debian_package debian
-#vi debian/changelog # Set the version number on top line (optional)
+git checkout 2acf4758ac1e4786a524d7ce2ed95b6cc49faffa
 
 dpkg-buildpackage -uc -us
 
