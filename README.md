@@ -24,3 +24,13 @@ All .deb files are now in $DIR of the docker host.
     sudo docker run --detach=false --rm -v $DIR:/olsrd/mount build-olsrd-debian12
 
 All .deb files are now in $DIR of the docker host.
+
+## Debian 13
+
+    cp Dockerfile.debian13 Dockerfile
+    sudo docker build -t build-olsrd-debian13 .
+    DIR=/tmp/olsr-build-share
+    mkdir $DIR
+    sudo docker run --detach=false --rm -v $DIR:/olsrd/mount build-olsrd-debian13
+
+All .deb files are now in $DIR of the docker host.
